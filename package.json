@@ -1,0 +1,20 @@
+{
+  "name": "node-todo",
+  "version": "0.0.1",
+  "author": "Mike Cantelon <mcantelon@gmail.com>",
+  "description": "a CLI client/server task manager",
+  "keywords": [
+    "cli",
+    "to-do",
+    "todo"
+  ],
+  "dependencies" : {
+    "express"          :  "2.5.x",
+    "express-resource" :  "0.2.x",
+    "dirty"            :  "0.9.x"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  }
+}
