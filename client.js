@@ -6,6 +6,9 @@ var path = require('path')
 var configFile = path.join(process.env.HOME, '.elflord')
   , config;
 
+// allow overriding of default configuration location
+configFile = (argv['c']) ? argv['c'] : configFile;
+
 path.exists(configFile, function(exists) {
   if (exists) {
     fs.readFile(configFile, 'utf8', function(err, data) {
