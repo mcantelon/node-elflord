@@ -14,7 +14,8 @@
     "dirty"            : "0.9.x",
     "request"          : "2.2.x",
     "mingy"            : "0.2.x",
-    "optimist"         : "0.3.x"
+    "optimist"         : "0.3.x",
+    "commander"        : "0.5.x"
   },
   "license": "MIT",
   "engine": {
