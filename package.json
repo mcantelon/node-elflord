@@ -2,11 +2,12 @@
   "name": "node-todo",
   "version": "0.0.1",
   "author": "Mike Cantelon <mcantelon@gmail.com>",
-  "description": "a CLI client/server task manager",
+  "description": "a standalone or client/server CLI utility for managing to-do items",
   "keywords": [
     "cli",
     "to-do",
-    "todo"
+    "todo",
+    "productivity"
   ],
   "dependencies" : {
     "express"          : "2.5.x",
