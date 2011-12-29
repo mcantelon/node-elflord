@@ -21,7 +21,7 @@ Elflord is installed using npm, as shown below.
 
 ## Configuration
 
-TODO: To configure the Elflord client, enter "elflord" into the command-line
+To configure the Elflord client, enter "elflord" into the command-line
 then enter information into the prompts to create a client configuration file.
 
 ## Server
@@ -29,3 +29,7 @@ then enter information into the prompts to create a client configuration file.
 TODO: To configure the Elflord server, enter "elflord-server" into the
 command-line and enter information into the prompts to create a server
 configuration file.
+
+## Tasks
+
+Each task has a description, category, priority, and ID.
