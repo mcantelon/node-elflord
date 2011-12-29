@@ -1,6 +1,4 @@
 var path = require('path')
-  , mingy = require('mingy')
-  , Parser = mingy.Parser
   , argv = require('optimist').argv
   , fs = require('fs')
   , client = require('./lib/client');
