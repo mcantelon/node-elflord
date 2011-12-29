@@ -7,7 +7,7 @@ var configFile = path.join(process.env.HOME, '.elflord')
   , config;
 
 // allow overriding of default configuration location
-configFile = (argv['c']) ? argv['c'] : configFile;
+configFile = (argv['f']) ? argv['f'] : configFile;
 
 path.exists(configFile, function(exists) {
   if (exists) {
