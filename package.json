@@ -18,6 +18,10 @@
     "optimist"         : "0.3.x",
     "commander"        : "0.5.x"
   },
+  "bin": {
+    "elflord": "./bin/client.js",
+    "elflord-server": "./bin/server.js"
+  },
   "license": "MIT",
   "engine": {
     "node": ">=0.4"
