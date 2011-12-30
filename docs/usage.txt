@@ -1,0 +1,8 @@
+Usage: elflord <command> [arguments and options] [-c <configuration file>]
+
+Commands:
+  help
+  add <task description> [-c category] [-p priority]
+  list [category]
+  update <task id> <property> <value>
+  delete <task id>
