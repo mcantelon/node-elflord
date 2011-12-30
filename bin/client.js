@@ -1,7 +1,9 @@
+#!/usr/bin/env node
+
 var path = require('path')
   , argv = require('optimist').argv
   , fs = require('fs')
-  , client = require('./lib/client/client');
+  , client = require('../lib/client/client');
 
 var configFile = path.join(process.env.HOME, '.elflord')
   , config;

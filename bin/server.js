@@ -1,9 +1,11 @@
+#!/usr/bin/env node
+
 var express = require('express')
   , er = require('express-resource')
   , app = express.createServer()
   , dirty = require('dirty')
   , db = require('dirty')('t.db')
-  , controllerDir = './lib/server/controllers';
+  , controllerDir = '../lib/server/controllers';
 
 db.on('load', function() {
   app.use(express.bodyParser());
