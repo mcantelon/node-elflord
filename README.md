@@ -11,7 +11,8 @@ CURRENTLY IN EARLY DEVELOPMENT.
 Elflord is a standalone or client/server command-line to-do manager.
 
 Use Elflord as a standalone tool if you spend most of your time in the same
-place. Use it as a client/server application if you roam the land.
+place. Or use it as a client/server application if you roam the land.
+Elflord's server speaks REST so you can make all manner of things hoot at it.
 
 ## Installation
 
