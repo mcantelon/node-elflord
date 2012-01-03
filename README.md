@@ -14,6 +14,10 @@ Use Elflord as a standalone tool if you spend most of your time in the same
 place. Or use it as a client/server application if you roam the land.
 Elflord's server speaks REST so you can make all manner of things hoot at it.
 
+## Tasks
+
+Each task has a description, category, priority, and ID.
+
 ## Installation
 
 Elflord is installed using npm, as shown below.
@@ -27,10 +31,9 @@ then enter information into the prompts to create a client configuration file.
 
 ## Server
 
-TODO: To configure the Elflord server, enter "elflord-server" into the
-command-line and enter information into the prompts to create a server
-configuration file.
+To configure the Elflord server, enter "elflord-server" into the command-line
+and enter information into the prompts to create a server configuration file.
 
-## Tasks
+## Nomenclature
 
-Each task has a description, category, priority, and ID.
+Why is this called "Elflord"?
