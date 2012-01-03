@@ -5,13 +5,14 @@ var express = require('express')
   , app = express.createServer()
   , dirty = require('dirty')
   , db = require('dirty')('t.db')
-  , controllerDir = '../lib/server/controllers';
+  , controllerDir = '../lib/server/controllers'
+  , controllerOptions = {db: db, password: 'aaa'};
 
 db.on('load', function() {
   app.use(express.bodyParser());
 
-  app.resource('tasks', require(controllerDir + '/tasks')(db));
-  app.resource('categories', require(controllerDir + '/categories')(db));
+  app.resource('tasks', require(controllerDir + '/tasks')(controllerOptions));
+  app.resource('categories', require(controllerDir + '/categories')(controllerOptions));
 
   app.listen(8000);
 });
