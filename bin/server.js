@@ -1,18 +1,24 @@
 #!/usr/bin/env node
 
-var express = require('express')
-  , er = require('express-resource')
-  , app = express.createServer()
-  , dirty = require('dirty')
-  , db = require('dirty')('t.db')
-  , controllerDir = '../lib/server/controllers'
-  , controllerOptions = {db: db, password: 'aaa'};
+var path = require('path')
+  , argv = require('optimist').argv
+  , fs = require('fs')
+  , server = require('../lib/server/server.js');
 
-db.on('load', function() {
-  app.use(express.bodyParser());
+var configFile = path.join(process.env.HOME, '.elflord-server')
+  , config;
 
-  app.resource('tasks', require(controllerDir + '/tasks')(controllerOptions));
-  app.resource('categories', require(controllerDir + '/categories')(controllerOptions));
+// allow overriding of default configuration location
+configFile = (argv['f']) ? argv['f'] : configFile;
 
-  app.listen(8000);
+path.exists(configFile, function(exists) {
+  if (exists) {
+    fs.readFile(configFile, 'utf8', function(err, data) {
+      if (err) throw err;
+      config = JSON.parse(data.toString());
+      server.run(argv, config);
+    });
+  } else {
+    server.makeConfigFile(configFile);
+  }
 });
