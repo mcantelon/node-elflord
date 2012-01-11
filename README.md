@@ -8,13 +8,13 @@
 
 CURRENTLY IN DEVELOPMENT SO DON'T EXPECT A LOT.
 
-"The Elflord knows what is undone."
+_"The Elflord knows what is undone."_
 
 Elflord is a standalone or client/server command-line to-do manager.
 
 Use Elflord as a standalone tool if you spend most of your time in the same
 place. Or use it as a client/server application if you roam the land.
-Elflord's server speaks REST so you can make all manner of things hoot at it.
+Elflord's server speaks REST so you can make all manner of things prod at it.
 
 ## Tasks
 
@@ -28,7 +28,7 @@ more important (default is 0).
 When adding a task you can just specify a task description, if you want,
 or you can optionally specify a category and/or priority.
 
-You can add a task using the `add`/`a` command.
+You can add a task using the `a`/`add`/ command.
 
     elflord add Stare into the eyes of seething darkeness. -c personal -p 3
 
@@ -81,4 +81,4 @@ If you want to run an Elflord server, start it somewhere by entering
 The server serves to-do items as JSON using a REST-ish interface. Unauthorized
 modifications to to-do items can be protected by an optional password. There
 is currently nothing to prevent anyone from listing your tasks and finding
-out about your "ways".
+out about your ways.
