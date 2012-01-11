@@ -28,9 +28,11 @@ more important (default is 0).
 When adding a task you can just specify a task description, if you want,
 or you can optionally specify a category and/or priority.
 
+You can add a task using the `add`/`a` command.
+
     elflord add Stare into the eyes of seething darkeness. -c personal -p 3
 
-You can list all tasks using the `ls`/`list` command.
+You can list all tasks using the `l`/`ls`/`list` command.
 
     elflord ls
 
@@ -42,10 +44,12 @@ When you list tasks the ID will be listed and you can use the ID to Do
 Things.
 
 The ID can be used to Update a task's description, category, or priority.
+You can update a task using the `u`/`update` command.
 
-    elflord update 34 priority 2
+    elflord u 34 priority 2
 
 The ID can also be used to destroy a task.
+You can update a task using the `d`/`delete` command.
 
     elflord delete 5
 
@@ -65,7 +69,7 @@ To configure the Elflord server, enter `elflord-server`. The configuration
 file will be written to `.elflord-server` in your home directory.
 
 You can specify an arbitrary configuration file, if you want, by running
-either the client or the server with the `-c` flag.
+either the client or the server with the `-f` flag.
 
 Ho ho ho.
 
