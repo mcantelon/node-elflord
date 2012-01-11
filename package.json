@@ -1,5 +1,5 @@
 {
-  "name": "node-todo",
+  "name": "elflord",
   "version": "0.0.1",
   "author": "Mike Cantelon <mcantelon@gmail.com>",
   "description": "a standalone or client/server CLI utility for managing to-do items",
