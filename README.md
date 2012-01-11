@@ -28,7 +28,7 @@ more important (default is 0).
 When adding a task you can just specify a task description, if you want,
 or you can optionally specify a category and/or priority.
 
-    elflord add Wander lonely as a cloud. -c personal -p 3
+    elflord add Stare into the eyes of seething darkeness. -c personal -p 3
 
 You can list all tasks using the `ls`/`list` command.
 
@@ -57,12 +57,12 @@ Elflord is installed using npm, as shown below.
 
 ## Configuration
 
-To configure the Elflord client, enter "elflord" into the command-line
+To configure the Elflord client, enter `elflord` into the command-line
 then enter information into the prompts to create a client configuration file.
 The configuration file will be written to `.elflord` in your home directory.
 
-To configure the Elflord server, do the same thing. The configuration file
-will be written to `.elflord-server` in your home directory.
+To configure the Elflord server, enter `elflord-server`. The configuration
+file will be written to `.elflord-server` in your home directory.
 
 You can specify an arbitrary configuration file, if you want, by running
 either the client or the server with the `-c` flag.
@@ -70,6 +70,9 @@ either the client or the server with the `-c` flag.
 Ho ho ho.
 
 ## Server
+
+If you want to run an Elflord server, start it somewhere by entering
+`elflord-server`. You can run it in the "cloud" or in a "sewer".
 
 The server serves to-do items as JSON using a REST-ish interface. Unauthorized
 modifications to to-do items can be protected by an optional password. There
