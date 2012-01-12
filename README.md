@@ -82,3 +82,14 @@ The server serves to-do items as JSON using a REST-ish interface. Unauthorized
 modifications to to-do items can be protected by an optional password. There
 is currently nothing to prevent anyone from listing your tasks and finding
 out about your ways.
+
+## Underpinnings
+
+Elflord uses the "express" and "express-resource" modules for HTTP responses
+and the "request" module for HTTP requests.
+
+Elflord uses the "dirty" module for storage.
+
+Elflord uses the "optimist" module for command-line option parsing, the
+"mingy" module for command parsing, and the "commander" module for interactive
+prompting.
