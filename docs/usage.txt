@@ -6,15 +6,15 @@ Commands:
   Add:
     a <task description> [-c category] [-p priority]
     add <task description> [-c category] [-p priority]
-
   List:
     l [category]
     list [category]
-
   Update:
     u <task id> <property> <value>
     update <task id> <property> <value>
-
   Delete:
     d <task id>
     delete <task id>
+  Categories:
+    c
+    categories

@@ -53,6 +53,11 @@ You can update a task using the `d`/`delete` command.
 
     elflord delete 5
 
+You can see how many tasks are assigned per category using the
+`c/`/`categories` command.
+
+    elflord c
+
 ## Installation
 
 Elflord is installed using npm, as shown below.
