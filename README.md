@@ -116,7 +116,7 @@ Finally, create and launch a Heroku app by entering the following commands.
     heroku ps:scale web=1
     heroku open
 
-Your browse should now open to your Elflord server's new home and you can
+Your browser should now open to your Elflord server's new home and you can
 configure your Elflord client to connect to it.
 
 ## Underpinnings
