@@ -90,6 +90,35 @@ modifications to to-do items can be protected by an optional password. There
 is currently nothing to prevent anyone from listing your tasks and finding
 out about your ways.
 
+## Deploying to Heroku
+
+The Elflord server runs very easily on Heroku, giving you a free place to
+host it. First: sign up for an account, install the Heroku CLI tool, and log
+into your account using the CLI tool. The steps needed to do these things
+are available online (http://devcenter.heroku.com/articles/node-js).
+
+Once you're set up on Heroku, create a clone of Elflord on your workstation.
+
+    cd /some/working/directory
+    git clone git://github.com/mcantelon/node-elflord.git
+    cd node-elflord
+
+Next, edit the `heroku/config` file, changing the password. The commit the
+change.
+
+    git add heroku/config
+    git commit -m "Changed password."
+
+Finally, create and launch a Heroku app by entering the following commands.
+
+    heroku create --stack cedar
+    git push heroku master
+    heroku ps:scale web=1
+    heroku open
+
+Your browse should now open to your Elflord server's new home and you can
+configure your Elflord client to connect to it.
+
 ## Underpinnings
 
 Elflord uses the "express" and "express-resource" modules for HTTP responses
