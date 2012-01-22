@@ -22,6 +22,9 @@
     "elflord": "./bin/client.js",
     "elflord-server": "./bin/server.js"
   },
+  "scripts": {
+    "start": "./bin/server.js"
+  },
   "license": "MIT",
   "engine": {
     "node": ">=0.4"
