@@ -103,7 +103,7 @@ Once you're set up on Heroku, create a clone of Elflord on your workstation.
     git clone git://github.com/mcantelon/node-elflord.git
     cd node-elflord
 
-Next, edit the `heroku/config` file, changing the password. The commit the
+Next, edit the `heroku/config` file, changing the password, and commit the
 change.
 
     git add heroku/config
