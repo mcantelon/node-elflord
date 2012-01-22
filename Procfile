@@ -1,1 +1,1 @@
-web: node bin/server.js -f config/heroku
+web: node bin/server.js -f heroku/config
