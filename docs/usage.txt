@@ -18,3 +18,5 @@ Commands:
   Categories:
     c
     categories
+  Backup:
+    dump
