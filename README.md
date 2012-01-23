@@ -90,7 +90,7 @@ modifications to to-do items can be protected by an optional password. There
 is currently nothing to prevent anyone from listing your tasks and finding
 out about your ways.
 
-## Deploying to Heroku
+## Heroku
 
 The Elflord server runs very easily on Heroku, giving you a free place to
 host it. First: sign up for an account, install the Heroku CLI tool, and log
