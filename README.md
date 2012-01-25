@@ -86,9 +86,8 @@ If you want to run an Elflord server, start it somewhere by entering
 `elflord-server`. You can run it in the "cloud" or in a "sewer".
 
 The server serves to-do items as JSON using a REST-ish interface. Unauthorized
-modifications to to-do items can be protected by an optional password. There
-is currently nothing to prevent anyone from listing your tasks and finding
-out about your ways.
+access to to-do items can be protected by an optional password. If you want
+your to-do items to be public, just leave the password blank.
 
 ## Heroku
 
