@@ -6,8 +6,6 @@
     888    .o  888   888     888  888   888  888     888   888  
     `Y8bod8P' o888o o888o   o888o `Y8bod8P' d888b    `Y8bod88P" 
 
-CURRENTLY IN DEVELOPMENT SO DON'T EXPECT A LOT.
-
 _"The Elflord knows what is undone."_
 
 Elflord is a standalone or client/server command-line to-do manager.
