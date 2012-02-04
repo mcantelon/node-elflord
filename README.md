@@ -118,6 +118,10 @@ Finally, create and launch a Heroku app by entering the following commands.
 Your browser should now open to your Elflord server's new home and you can
 configure your Elflord client to connect to it.
 
+## REST API
+
+Yeah, I should probably document this soon.
+
 ## Underpinnings
 
 Elflord uses the "express" and "express-resource" modules for HTTP responses
