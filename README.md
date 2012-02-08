@@ -118,7 +118,41 @@ configure your Elflord client to connect to it.
 
 ## REST API
 
-Yeah, I should probably document this soon.
+### List all tasks
+
+Method: GET
+Params: password
+Path: /tasks
+
+### List categories
+
+Method: GET
+Params: password
+Path: /categories
+
+### List tasks in category
+
+Method: GET
+Params: password
+Path: /categories/<category>
+
+### Add task
+
+Method: POST
+Params: password, description, category (optional), priority (optional)
+Path: /tasks
+
+### Update task
+
+Method: PUT
+Params: password, description (optional), category (optional), priority (optional)
+Path: /tasks/<task ID>
+
+### Delete task
+
+Method: DELETE
+Params: password
+Path: /tasks/<task ID>
 
 ## Underpinnings
 
