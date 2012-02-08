@@ -134,7 +134,7 @@ configure your Elflord client to connect to it.
 
 **Method:** GET  
 **Params:** password  
-**Path:** /categories/<category>  
+**Path:** `/categories/<category>`  
 
 ### Add task
 
