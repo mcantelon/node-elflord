@@ -121,38 +121,38 @@ configure your Elflord client to connect to it.
 ### List all tasks
 
 **Method:** GET  
-**Params:** password  
-**Path:** /tasks  
+**Params:** `password`  
+**Path:** `/tasks`  
 
 ### List categories
 
 **Method:** GET  
-**Params:** password  
-**Path:** /categories  
+**Params:** `password`  
+**Path:** `/categories`  
 
 ### List tasks in category
 
 **Method:** GET  
-**Params:** password  
+**Params:** `password`  
 **Path:** `/categories/<category>`  
 
 ### Add task
 
 **Method:** POST  
-**Params:** password, description, category (optional), priority (optional)  
-**Path:** /tasks  
+**Params:** `password`, `description`, `category` (optional), `priority` (optional)  
+**Path:** `/tasks`  
 
 ### Update task
 
 **Method:** PUT  
-**Params:** password, description (optional), category (optional), priority (optional)  
-**Path:** /tasks/<task ID>  
+**Params:** `password`, `description` (optional), `category` (optional), `priority` (optional)  
+**Path:** `/tasks/<task ID>`  
 
 ### Delete task
 
 **Method:** DELETE  
-**Params:** password  
-**Path:** /tasks/<task ID>  
+**Params:** `password`  
+**Path:** `/tasks/<task ID>`  
 
 ## Underpinnings
 
