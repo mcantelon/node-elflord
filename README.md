@@ -120,9 +120,9 @@ configure your Elflord client to connect to it.
 
 ### List all tasks
 
-Method: GET
-Params: password
-Path: /tasks
+Method: GET  
+Params: password  
+Path: /tasks  
 
 ### List categories
 
