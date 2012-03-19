@@ -1,0 +1,1 @@
+Usage: elflord-server [-f <configuration file>] [-d database file]

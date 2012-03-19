@@ -9,22 +9,27 @@ var path = require('path')
 var configFile = path.join(helpers.homeDir(), '.elflord-server')
   , config;
 
-// allow overriding of default configuration location
-configFile = (argv['f']) ? argv['f'] : configFile;
+if (argv['h']) {
+  console.log(fs.readFileSync('./docs/usage_server.txt').toString());
+} else {
 
-path.exists(configFile, function(exists) {
-  if (exists) {
-    fs.readFile(configFile, 'utf8', function(err, data) {
-      if (err) throw err;
+  // allow overriding of default configuration location
+  configFile = (argv['f']) ? argv['f'] : configFile;
 
-      config = JSON.parse(data.toString());
+  path.exists(configFile, function(exists) {
+    if (exists) {
+      fs.readFile(configFile, 'utf8', function(err, data) {
+        if (err) throw err;
 
-      // allow overriding of default DB location
-      config.dbFile = argv['d'] || config.db || 'elflord-server.db';
+        config = JSON.parse(data.toString());
 
-      server.run(argv, config);
-    });
-  } else {
-    server.makeConfigFile(configFile);
-  }
-});
+        // allow overriding of default DB location
+        config.dbFile = argv['d'] || config.db || 'elflord-server.db';
+
+        server.run(argv, config);
+      });
+    } else {
+      server.makeConfigFile(configFile);
+    }
+  });
+}
