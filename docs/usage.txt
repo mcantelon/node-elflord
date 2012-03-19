@@ -1,4 +1,4 @@
-Usage: elflord <command> [arguments and options] [-f <configuration file>]
+Usage: elflord <command> [arguments and options] [-f <configuration file>] [-d database file]
 
 Commands:
   help
