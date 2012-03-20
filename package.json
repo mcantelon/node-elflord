@@ -1,6 +1,6 @@
 {
   "name": "elflord",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mike Cantelon <mcantelon@gmail.com>",
   "description": "a standalone or client/server CLI utility for managing to-do items",
   "keywords": [
@@ -24,6 +24,13 @@
   },
   "scripts": {
     "start": "./bin/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mcantelon/node-elflord.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mcantelon/node-elflord/issues"
   },
   "license": "MIT",
   "engine": {
