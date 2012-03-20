@@ -21,7 +21,7 @@ as Heroku.
 Each task has a description, category, priority, and ID.
 
 A category is just a word and a priority is just a number: the higher the
-more important (default is 0).
+more important (default is 3).
 
 ## Usage
 
