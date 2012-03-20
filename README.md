@@ -123,36 +123,107 @@ configure your Elflord client to connect to it.
 **Method:** GET  
 **Params:** `password`  
 **Path:** `/tasks`  
+**Returns**: `status`, `tasks`
 
-### List categories
+Example response:
+
+    {
+      "status": 200,
+      "tasks": [{
+        "id": 9,
+        "category": "work",
+        "description": "Update the sacred eye.",
+        "priority": 3
+      }, {
+        "id": 10,
+        "category": "home",
+        "description": "Buy the pillows.",
+        "priority": 3
+      }]
+    }
+
+### List categories and number of tasks in each
 
 **Method:** GET  
 **Params:** `password`  
 **Path:** `/categories`  
+**Returns**: `status`, `categories`
+
+Example response:
+
+    {
+      "status": 200,
+      "categories": {
+        "work": 1,
+        "home": 1
+      }
+    }
 
 ### List tasks in category
 
 **Method:** GET  
 **Params:** `password`  
 **Path:** `/categories/<category>`  
+**Returns**: `status`, `tasks`
+
+Example response:
+
+    {
+      "status": 200,
+      "tasks": [{
+        "id": 9,
+        "category": "work",
+        "description": "Update the sacred eye.",
+        "priority": 3
+      }]
+    }
 
 ### Add task
 
 **Method:** POST  
 **Params:** `password`, `description`, `category` (optional), `priority` (optional)  
 **Path:** `/tasks`  
+**Returns**: `status`, `task`
+
+Example response:
+
+    {
+      "status": 200,
+      "task": {
+        "id": 10,
+        "category": "home",
+        "description": "Buy the pillows.",
+        "priority": 3
+      }
+    }
 
 ### Update task
 
 **Method:** PUT  
 **Params:** `password`, `description` (optional), `category` (optional), `priority` (optional)  
 **Path:** `/tasks/<task ID>`  
+**Returns:** `status`, `updated`
+
+Example response:
+
+    {
+      "status": 200,
+      "updated": 1
+    }
 
 ### Delete task
 
 **Method:** DELETE  
 **Params:** `password`  
 **Path:** `/tasks/<task ID>`  
+**Returns:** `status`, `deleted`
+
+Example response:
+
+    {
+      "status": 200,
+      "deleted": 1
+    }
 
 ## Underpinnings
 
