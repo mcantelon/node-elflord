@@ -10,6 +10,8 @@ _"The Elflord knows what is undone."_
 
 Elflord is a standalone or client/server command-line to-do manager.
 
+![Elflord screenshot](https://github.com/mcantelon/node-elflord/raw/master/docs/elflord_screenshot.png)
+
 Use Elflord as a standalone tool if you spend most of your time in the same
 place. Or use it as a client/server application if you roam the land.
 Elflord's server speaks REST so you can make all manner of things prod at it.
