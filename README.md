@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/mcantelon/node-elflord.png)](http://travis-ci.org/mcantelon/node-elflord)
               oooo   .o88o. oooo                           .o8  
               `888   888 `" `888                          "888  
      .ooooo.   888  o888oo   888   .ooooo.  oooo d8b  .oooo888  
