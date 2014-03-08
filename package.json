@@ -1,5 +1,4 @@
 {
-  "name": "elflord",
   "version": "0.1.1",
   "author": "Mike Cantelon <mcantelon@gmail.com>",
   "description": "a standalone or client/server CLI utility for managing to-do items",
@@ -10,13 +9,19 @@
     "productivity"
   ],
   "dependencies" : {
-    "express"          : "2.5.x",
-    "express-resource" : "0.2.x",
-    "dirty"            : "0.9.x",
-    "request"          : "2.2.x",
-    "mingy"            : "0.2.x",
-    "optimist"         : "0.3.x",
-    "commander"        : "0.5.x"
+    "express"            : "2.5.x",
+    "express-resource"   : "0.2.x",
+    "connect"            : ">=2.3.8",
+    "dirty"              : "0.9.x",
+    "request"            : "2.2.x",
+    "mingy"              : "0.2.x",
+    "optimist"           : "0.3.x",
+    "commander"          : "0.5.x",
+    "angular"            : "1.2.10",
+    "angular-ui-router"  : "0.2.8",
+    "browserify"         : "3.30.2",
+    "grunt-browserify"   : "1.3.1",
+    "grunt-contrib-copy" : "0.5.0"
   },
   "bin": {
     "elflord": "./bin/client.js",
