@@ -11,7 +11,7 @@ var configFile = path.join(process.env.HOME, '.elflord')
 // allow overriding of default configuration location
 configFile = (argv['f']) ? argv['f'] : configFile;
 
-path.exists(configFile, function(exists) {
+fs.exists(configFile, function(exists) {
   if (exists) {
     fs.readFile(configFile, 'utf8', function(err, data) {
       if (err) throw err;

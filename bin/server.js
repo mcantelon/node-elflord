@@ -16,7 +16,7 @@ if (argv['h']) {
   // allow overriding of default configuration location
   configFile = (argv['f']) ? argv['f'] : configFile;
 
-  path.exists(configFile, function(exists) {
+  fs.exists(configFile, function(exists) {
     if (exists) {
       fs.readFile(configFile, 'utf8', function(err, data) {
         if (err) throw err;
